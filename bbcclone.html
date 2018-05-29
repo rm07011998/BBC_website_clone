@@ -1,0 +1,907 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <title>Technology-BBC News</title>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
+    </head>
+    
+    <style type="text/css">
+        
+        body{
+            margin:0;
+            padding:0;
+            font-family: 'Chelsea Market', cursive;
+        }
+        
+        #topbar{
+          
+            width:770px;
+            margin:0 auto;
+            padding:5px;
+            background-color:yellow;
+            height:40px;
+            
+        }
+        #menubar{
+            width:100%;
+            margin:0px;
+            height:60px;
+            background-color:#CB0000;
+        }
+        #lowermenubar{
+            margin:0px;
+            height:40px;
+            background-color:#B70000;
+        }
+        #logo{
+            
+            margin:auto;
+            padding:inherit;
+            float:left;
+        }
+        .topbar-section{
+            border-left:2px black solid;
+            float:left;
+            height:40px;
+            
+        }
+        
+        .lowermenubar-section{
+            border-left:2px black solid;
+            
+             
+            float:left;
+            height:20px;
+           
+            
+        }
+        
+        
+        #signimage{
+            
+            margin:5px;
+            width:40px;
+            height: 40px;
+            float:left;
+        }
+        #signin{
+            
+            font-style: italic;
+            color:black;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color:red;
+        }
+        a:visited{
+            color:none;
+        }
+        
+        #titlebartext{
+            
+            margin:5px;
+            color:blue;
+            font-weight: bold;
+            position: relative;
+            top:10px;
+        }
+        #notiimage{
+            
+            
+            margin:5px;
+            padding:inherit;
+            width:30px;
+            height:30px;
+            
+        }
+        #search-bar{
+           
+            margin: 8px 0px  8px 8px;
+            background-color: #E3E3E3;
+            font-weight: bold;
+            border:none;
+            padding:5px;
+            float: left;
+        }
+        #search-icon{
+            border:none;
+            position:relative;
+            top:8px;
+           height:26px;
+         
+        }
+        #menutext1{
+        color:white;
+            
+            font-size:300%;
+            font-weight:bold;
+            font-style: italic;
+            position:relative;
+            left:100px;
+           float:left;
+        }
+        #location{
+            
+            color:white;
+            position:relative;
+           
+            
+        }
+        #locationtext{
+            
+        position:relative;
+            bottom:30px;
+            left:900px;
+        }
+        #pointer{
+            position:relative;
+            height:60px;
+            left:900px;
+        }
+        #location a{
+            color:white;
+        }
+        #location a:hover{
+            text-decoration: underline;
+            
+        }
+        a:hover{
+            color:blue;
+            
+        }
+        #home{
+            
+            position:relative;
+            left:40px;      
+            top:10px;
+            margin-right:10px;
+            margin-left:10px;
+            padding-left:5px;
+            font-weight:bold;
+            color:white;
+            float:left;
+        }
+        #home a{
+            color:white;
+        
+        }
+        #mainarticle{
+            
+            width:600px;
+            background-color: green;
+            height:860px;
+            position:relative;
+            border-right:5px red solid;
+            left:150px;
+            float:left;
+            margin-right: 10px;
+            
+        }
+         #main2{
+            
+            width:600px;
+            background-color: orange;
+            height:2400px;
+            position:relative;
+             
+            left:150px;
+             float:left;
+           
+            
+        }
+        #topheading{
+            width:580px;
+            height:150px;
+            margin:30px 10px 10px 10px;
+            background-color:red;
+        }
+        
+        #subhead1{
+            width:200px;
+            height:300px;
+            margin:5px 5px 5px 5px;
+            padding:5px;
+            background-color:yellow;
+            border-right:5px black solid;
+            float:left;
+        }
+         #subhead2{
+            width:200px;
+            height:300px;
+              margin:5px 5px 5px 5px;
+            float:left;
+            padding:5px;
+            background-color:yellow;
+            border-right:5px black solid;
+        }
+        
+        #sideminibar1{
+            
+            width:140px;
+            height:100px;
+            margin-top:5px;
+            background-color: aqua;
+            border-bottom:5px black solid;
+            float:left;
+        }
+        
+        #sideminibar2{
+            
+            width:140px;
+            height:100px;
+            background-color: brown;
+            border-bottom:5px black solid;
+            float:left;
+        }
+        
+        
+        #sideminibar3{
+            
+            width:140px;
+            height:100px;
+            background-color: red;
+            
+            float:left;
+        }
+        #clear{
+            
+            clear:both;
+            margin:0px;
+            padding:0px;
+        }
+        
+        #leftbar{
+            
+            width:300px;
+            height:300px;
+            background-color:cornflowerblue;
+            border-right:2px  black solid;
+            float:left;
+        }
+         #rightbar{
+            
+            width:295px;
+            height:300px;
+            background-color:cornflowerblue;
+            border-right:2px  black solid;
+             float:left;
+        }
+        
+        #l1{
+            
+            width:300px;
+            height:98px;
+            background-color:red;
+            border-bottom: 1px  black solid;
+        }
+        
+         #l2{
+            
+            width:300px;
+            height:98px;
+            background-color:green;
+            border-bottom: 1px  black solid;
+        }
+        
+         #l3{
+            
+            width:300px;
+            height:98px;
+            background-color:orange;
+            
+        }
+        
+        #watch{
+            
+            width:400px;
+            height:1400px;
+            position:relative;
+            left:160px;
+            top:-860px;
+            
+            background:blue;
+            float:left;
+           
+        }
+        
+        #mostpopular{
+            
+            width:398px;
+            height:550px;
+            position:relative;
+           top:100px;
+            background-color:yellow; 
+            margin-top:10px;
+            margin-bottom: 10px;
+        }
+        
+        #elsewhere{
+            
+            width:398px;
+            height:180px;
+             position:relative;
+           margin:10px 0px 10px 0px;
+            top:100px;
+            background-color:pink;
+        }
+        
+        
+        #newtech{
+            
+            width:600px;
+            border-bottom: 2px black solid;
+            height:250px;
+            
+        }
+         #alsonews{
+            
+            width:600px;
+            border-bottom: 2px black solid;
+            height:250px;
+            
+        }
+        #feature{
+            
+            width:600px;
+            height:560px;
+            border-bottom:2px black solid;
+            
+        }
+        #expert{
+            width:600px;
+            height:400px;
+            border-bottom:2px black solid;
+        }
+        #click{
+            width:600px;
+            height:350px;
+            border-bottom:2px black solid;
+        }
+        #special{
+            width:600px;
+            height:600px;
+            background-color: green;
+        }
+        
+        #bottommain{
+            
+            width:1000px;
+            height:920px;
+            border-top:2px black solid;
+            background-color:yellow;
+             position:relative;
+            left:150px;
+            margin-bottom: 0px;
+            float:left;
+            
+        }
+       
+        #podcast{
+            
+                height:480px;
+                border-bottom:2px black solid;
+            
+        }
+        #taskbar{
+            
+                width:100%;
+                height:600px;
+            position:relative;
+            background-color:#4D4D4D;
+    
+        }
+        #service{
+            
+            height:150px;
+            background-color: #333333;
+        }
+        
+        #newsquiz{
+            height:300px;
+            background-color:#8D8D8D;
+        }
+        
+        #tech{
+            
+            font-style:italic;
+            font-weight: bold;
+            font-size:120%;
+            text-decoration: underline ;
+            text-decoration-color: #CB0000;
+        }
+        
+        #topheadingtitle{
+            
+            font-size:180%;
+            color:grey;
+            font-weight:bold;
+            margin-bottom: 0px;
+            
+        }
+        
+        #thimage{
+            
+            height: 90px;
+            position:relative;
+           
+           float:left;
+        }
+        
+        #thtext{
+            width:300px;
+            height:40px;
+            position:relative;
+            left:10px;
+            float:left;
+            
+            
+        }
+        #time{
+            position:relative;
+            left:300px;
+        }
+        
+        #sh1image{
+            
+            width:198px;
+        }
+        #sh1title{
+            
+            font-weight: bold;
+            font-size: 130%;
+        }
+        #smtitle{
+            
+            font-weight: bold;
+        
+        }
+        #wtitle{
+            
+            font-style:italic;
+            font-weight:bold;
+            font-size:150%;
+            position:relative;
+            top:10px;
+            left:10px;
+        }
+        #vido{
+            
+            margin:8px;
+            clear:both;
+        }
+        
+        #i1{
+            
+            margin:10px;
+            float:left;
+        }
+        #mosttitle{
+            
+            height:80px;
+            background-color: #ECECEC;
+        }
+        
+        #mon{
+            
+            margin:5px;
+            height:60px;
+            border-bottom: 2px black solid;
+            
+        }
+        #mtext{
+            width:330px;
+            margin: 0px 0px 5px 10px;
+            height:40px;
+            background-color: aqua;
+            float:left;
+        }
+        #share{
+            height:200px;
+            
+            position:relative;
+            margin:10px 0px 5px 0px;
+            background-color: aquamarine;
+            top:100px;
+        }
+        #follow{
+            
+            position:relative;
+            
+            left:150px;
+            top:-50px;
+        }
+    </style>
+    
+    
+    
+    <body>
+        
+        <div id="topbar">
+            <img id="logo" src="http://completewebdevelopercourse.com/clone/index_files/bbc-blocks-dark.png" >
+            
+           
+            <div id="signin" class="topbar-section">
+                 <a href="http://ssl.bbc.co.uk/id/signin?ptrt=http%3A%2F%2Fwww.bbc.co.uk%2Fnews%2Ftechnology">
+                <img id="signimage" src="news">
+                <span id="titlebartext">Sign in</span>
+                      </a>
+            </div>
+            <div id="notification" class="topbar-section">
+                <a href="http://www.bbc.co.uk/news/technology#"><img id="notiimage"  src="bell2.png"></a>
+                
+            </div>
+             <div id="news" class="topbar-section">
+                <a href="http://www.bbc.co.uk/news/"><span id=titlebartext>news</span></a>
+            </div>
+             <div id="sport" class="topbar-section">
+               <a href="http://www.bbc.co.uk/sport/"><span id=titlebartext>sport</span></a>
+            </div>
+             <div id="tv" class="topbar-section">
+               <a href="http://www.bbc.co.uk/tv/"><span id=titlebartext>tv</span></a>
+            </div>
+             <div id="radio" class="topbar-section">
+                <a href="http://www.bbc.co.uk/radio/"><span id=titlebartext>radio</span></a>
+            </div>
+            <div id="weather" class="topbar-section">
+                <a href="http://www.bbc.co.uk/weather/"><span id=titlebartext>weather</span></a>
+            </div>
+             <div id="search" class="topbar-section">
+            
+                
+                <input id="search-bar" type="text" placeholder="search">
+                
+                 <input type="image" id="search-icon" src="search.png" >
+                  
+            </div>
+            
+        </div>
+        <div id="menubar">
+            <a href="http://www.bbc.co.uk/news"><span id="menutext1">NEWS</span></a>
+            <div id="location">
+               <a href=""><span id="locationtext">Find location news</span></a> 
+                <img id="pointer" src="pointer2.png">
+            </div>
+        </div>
+        
+         <div id="lowermenubar">
+            <div id="home">
+                <a href="">Home</a>   
+            </div>
+              <div id="home" class="lowermenubar-section" >
+               <a href=""> UK </a>
+            </div>
+              <div id="home" class="lowermenubar-section">
+                <a href="">World</a> 
+            </div>
+              <div id="home" class="lowermenubar-section">
+                <a href="">Business</a>  
+            </div>
+              <div id="home" class="lowermenubar-section">
+                <a href="">Politics </a> 
+            </div>
+              <div id="home" class="lowermenubar-section">
+                <a href="">Tech</a> 
+            </div>
+              <div id="home" class="lowermenubar-section">
+                <a href="">Science </a>  
+            </div>
+              <div id="home" class="lowermenubar-section">
+                <a href="">Health</a>
+            </div>
+              <div id="home" class="lowermenubar-section">
+                <a href="">Education</a>
+            </div>
+              <div id="home" class="lowermenubar-section"> 
+               <a href=""> Entertainment & Arts</a>
+            </div>
+              <div id="home" class="lowermenubar-section">
+               <a href="">Audio & Video </a>  
+            </div>
+             
+        </div>
+        
+        <div id="pagecontainer">
+            
+            <div id="mainarticle">
+                  
+               <span id="tech">Technology</span>
+                <div id="topheading">
+                    
+                <a href="">  <p id="topheadingtitle">Asda bug exposed payment details</p></a>
+                    <img id ="thimage"  src="asda.png"> 
+                <div id="thtext">Security vulnerabilities that put customers at risk have affected Asda's website for a couple of years a security expert has revealed</div>    
+                      <div id="clear">
+                </div>
+                    <div id=time> 2 hours ago | Technology</div>
+                </div>
+                  <div id="clear">
+                </div>
+                <hr>
+                <div id="subhead1">
+                    <img id="sh1image" src="twit.png">
+                    <span id="sh1title"> twitter suffers <br>technical fault</span>
+                    <div id="sh1text">
+                        The social network Twitter goes offline for many users,with web visitors beinng greeted by an error. 
+                    </div>
+                    <div><br>1 hour | Technology</div>
+                   
+                </div>
+                <div id="subhead2">
+                    <img id="sh1image" src="p1.png">
+                    <span id="sh1title">Drone lands on moving<br>car in germany</span>
+                    <div id="sh1text">
+                       Roboticists in germany have taught a drone how to land itself on car travelling a 75km/h. 
+                    </div>
+                    <div><br>44min ago | Technology</div>
+                  
+                </div>
+                <div id="sideminibar1">
+                     <div id="smtitle">
+                       Samsung updates sticky stylus holder
+                    </div>
+                     <div><br>44min ago | Technology</div>
+                </div>
+                <div id="sideminibar2">
+                   <div id="smtitle">
+                       Minecraft launch education edition  
+                    </div>
+                   
+                </div>
+                <div id="sideminibar3">
+                   <div id="smtitle">
+                        Ask.fm reveals top teen slang
+                    </div>
+                     <div><br>44min ago | Technology</div>
+                </div>
+                <div id="clear">
+                </div>
+                <hr>
+                <div id="leftbar">
+                    
+                <div id="l1">
+                    
+                         <div id="smtitle">
+                        Ask.fm reveals top teen slang
+                    </div>
+                     <div><br>44min ago | Technology</div>
+                    </div>
+                  <div id="l2">
+                         <div id="smtitle">
+                        Ask.fm reveals top teen slang
+                    </div>
+                     <div><br>44min ago | Technology</div>
+                    </div>
+                  <div id="l3">
+                         <div id="smtitle">
+                        Ask.fm reveals top teen slang
+                    </div>
+                     <div><br>44min ago | Technology</div>
+                    </div>
+                  
+                </div>
+                <div id="rightbar">
+                    <div id="l1">
+                         <div id="smtitle">
+                        Ask.fm reveals top teen slang
+                    </div>
+                     <div><br>44min ago | Technology</div>
+                    </div>
+                  <div id="l2">
+                         <div id="smtitle">
+                        Ask.fm reveals top teen slang
+                    </div>
+                     <div><br>44min ago | Technology</div>
+                    </div>
+                  <div id="l3">
+                         <div id="smtitle">
+                        Ask.fm reveals top teen slang
+                    </div>
+                     <div><br>44min ago | Technology</div>
+                    </div>
+                    
+                  
+                </div>
+               <hr>
+                
+                
+                
+                
+            </div>
+             <div id="clear">
+                </div>
+            
+            <div id="main2">
+                
+                <div id="newtech">
+                
+                </div>
+                <div id="alsonews">
+                
+                </div>
+                <div id="feature">
+                    
+                </div>
+                <div id="expert">
+                
+                </div>
+                 <div id="click">
+                
+                </div>
+                <div id="special">
+                
+                </div>
+                
+                
+
+            </div>
+             
+            
+            
+           
+            <div id="watch">
+                
+                <div id="wtitle"> Watch/Listen</div>
+                <div id="vido">
+                      
+                    <img id="i1" src="vid.png">
+                
+                    <div >kvkvjhhsvgjsalvhc </div>               
+                   
+                
+                </div>
+                 <div id="vido">
+                      
+                    <img id="i1" src="vid.png">
+                
+                    <div >kvkvjhhsvgjsalvhc </div>               
+                   
+                
+                </div>
+                 <div id="vido">
+                      
+                    <img id="i1" src="vid.png">
+                
+                    <div >kvkvjhhsvgjsalvhc </div>               
+                   
+                
+                </div>
+                 <div id="vido">
+                      
+                    <img id="i1" src="vid.png">
+                
+                    <div >kvkvjhhsvgjsalvhc </div>               
+                   
+                
+                </div>
+                 <div id="vido">
+                      
+                    <img id="i1" src="vid.png">
+                
+                    <div >kvkvjhhsvgjsalvhc </div>               
+                   
+                
+                </div>
+                 <div id="vido">
+                      
+                    <img id="i1" src="vid.png">
+                
+                    <div >kvkvjhhsvgjsalvhc </div>               
+                   
+                
+                </div>
+                <div id="mostpopular">
+                    <div  id="mosttitle">
+                        <span style="font-style:italic;font-weight: bold;font-size:200%;position:relative;left:-120px;">MOST POPULAR</span>
+                        from technology
+                    </div>
+                    <div id="mon">
+                        <div id="montext"> <span style="font-weight:bold;color:red;float:left;">MON </span>  <div id="mtext">nkcnsskbdksndsbdbnlblnlmbkd bhjvkn  vbjcdsdsvdkkvsd vdhsvdhscd  sjj</div> 
+                        </div>
+                    </div>
+                     <div id="mon">
+                        <div id="montext"> <span style="font-weight:bold;color:red;float:left;">TUE </span>  <div id="mtext">nkcnsskbdksndsbdbnlblnlmbkd bhjvkn  vbjcdsdsvdkkvsd vdhsvdhscd  sjj</div> 
+                        </div>
+                    </div>
+                     <div id="mon">
+                        <div id="montext"> <span style="font-weight:bold;color:red;float:left;">WED </span>  <div id="mtext">nkcnsskbdksndsbdbnlblnlmbkd bhjvkn  vbjcdsdsvdkkvsd vdhsvdhscd  sjj</div> 
+                        </div>
+                    </div>
+                     <div id="mon">
+                        <div id="montext"> <span style="font-weight:bold;color:red;float:left;">THU </span>  <div id="mtext">nkcnsskbdksndsbdbnlblnlmbkd bhjvkn  vbjcdsdsvdkkvsd vdhsvdhscd  sjj</div> 
+                        </div>
+                    </div>
+                     <div id="mon">
+                        <div id="montext"> <span style="font-weight:bold;color:red;float:left;">FRI </span>  <div id="mtext">nkcnsskbdksndsbdbnlblnlmbkd bhjvkn  vbjcdsdsvdkkvsd vdhsvdhscd  sjj</div> 
+                        </div>
+                    </div>
+                     <div id="mon">
+                        <div id="montext"> <span style="font-weight:bold;color:red;float:left;">SAT </span>  <div id="mtext">nkcnsskbdksndsbdbnlblnlmbkd bhjvkn  vbjcdsdsvdkkvsd vdhsvdhscd  sjj</div> 
+                        </div>
+                    </div>
+                     <div id="mon">
+                        <div id="montext"> <span style="font-weight:bold;color:red;float:left;">SUN </span>  <div id="mtext">nkcnsskbdksndsbdbnlblnlmbkd bhjvkn  vbjcdsdsvdkkvsd vdhsvdhscd  sjj</div> 
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="share">
+                    <p style="font-size:150%;font-style:italic;font-weight: bold;">Share with BBC news</p>
+                    <p style="margin:5px;"><img src="m.png">Send an SMS or MMS to 61124</p>
+                    <p style="margin:5px;"><img src="m3.png">Email us at xmail.com</p>
+                    <p style="margin:5px;"><img src="m4.png">Follow Have your Say on Twitter</p>
+                </div>
+                 <div id="clear">
+                </div>
+                <div id="elsewhere">
+                    
+                      <p style="font-size:150%;font-style:italic;font-weight: bold;">Follow Us</p>
+                    <img id="follow" src=follow.png>
+                    
+                </div>
+            </div>
+            
+             <div id="clear">
+                </div>
+            
+            
+            <div id="bottommain">
+                
+                <div id="podcast">
+                    
+                </div>n
+                
+            </div>
+            
+            <div id="clear">
+                </div>
+         
+            <div id="taskbar">
+                <div id="service">
+                    <span style="color:white;font-size:150%;font-weight:bold;margin:20px 0px 0px 20px;">BBC Services</span>
+                    <ul>
+                        <li style="float:left;color:white;margin:30px;">On your mobile</li>
+                        <li style="float:left;color:white;margin:30px;">On your conected tv</li>
+                        <li style="float:left;color:white;margin:30px;">get news alerts</li>
+                        <li style="float:left;color:white;margin:30px;">Contact BBC news</li>
+                    </ul>
+                </div>
+                <div id="newsquiz">
+                    
+                </div>
+                
+                <div id="last">
+                     <ul style="float:left;color:white;margin:30px;">
+                        <li >On your mobile</li>
+                        <li >On your conected tv</li>
+                        <li >get news alerts</li>
+                        <li >Contact BBC news</li>
+                    </ul>
+                     <ul style="float:left;color:white;margin:30px;">
+                        <li >On your mobile</li>
+                        <li >On your conected tv</li>
+                        <li >get news alerts</li>
+                        <li >Contact BBC news</li>
+                    </ul>
+                     <ul style="float:left;color:white;margin:30px;">
+                        <li >On your mobile</li>
+                        <li >On your conected tv</li>
+                        <li >get news alerts</li>
+                        <li >Contact BBC news</li>
+                    </ul>
+                    
+                    
+                </div>
+                
+                
+                
+            </div>
+            
+            
+            
+            
+        </div>
+    </body>
+</html>
